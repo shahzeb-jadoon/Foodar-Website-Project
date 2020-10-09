@@ -6,4 +6,4 @@ https://rawcdn.githack.com/shahzeb-jadoon/Foodar-Website-Project/cccaffac95b8114
 
 This website is only for viewing purposes, as a display of my work, rather than for actual use. It is not complete, thus some links or buttons do not produce an outcome - such as the "Sign In" link or the "Register" button do not accomplish any task.
 
-If you have any questions or improvements that you would like me to implement, email me at shahzeb.jadoon.sj@gmail.com
+This was finished within a week, so there are lots of places where the code can be improved. If you have any questions or improvements that you would like me to implement, email me at shahzeb.jadoon.sj@gmail.com.
