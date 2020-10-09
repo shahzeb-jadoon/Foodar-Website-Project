@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Request from Foodar</title>
+
+    <link rel="Foodar Icon" href="title.ico"/>
+  
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  
+</head>
+
+<body>
+    
+    <header class="pageHeader">
+        <a href="index.html">
+            <!--Retrieved from 
+                http://showcase.revature.com/foodar100/images/logo.png-->
+            <img src="logo.png" alt="Foodar Logo"/>
+            <!--nav id="logo">Foodar</nav-->
+        </a>
+      
+    </header>
+  
+    <br />
+  
+    <h1 class="requestHeading1">Request</h1>
+  
+    <hr class="requestLine">
+  
+    <br />
+
+    <div class="requestDiv">
+
+        <p>Please fill out the form below:</p>
+
+        <form action="#" id="form">
+
+            <h4 class="requestHeading4">Email:</h4>
+            <input class="requestInput" type="email"  id="email" 
+                name="email" placeholder="Email" required/>
+
+            <h4 class="requestHeading4">Choose Your Style:</h4>
+
+            <div class="requestDivBlock">
+                <label class="requestLabel">Classic</label>
+                <input class="requestInputStyle" type="radio" name="requestStyle" value="3"/>
+            </div>
+
+            <div class="requestDivBlock">
+                <label class="requestLabel">Premium</label>
+                <input class="requestInputStyle" type="radio" name="requestStyle" value="5"/>
+            </div>
+
+            <div class="requestDivBlock">
+                <label class="requestLabel">Royal</label>
+                <input class="requestInputStyle" type="radio" name="requestStyle" value="10"/>
+            </div>
+
+            <h4 class="requestHeading4">Restaurant:</h4>
+            <input class="requestInput" type="restaurant"  id="restaurant" 
+                name="restaurant" maxlength=30 placeholder="Restaurant" required/>
+
+            <h4 class="requestHeading4">Add Tip:</h4>
+
+            <div class="requestDivBlock">
+                <label class="requestLabel">10%</label>
+                <input class="requestInputTip" type="radio" name="requestTip" value="10"/>
+            </div>
+
+            <div class="requestDivBlock">
+                <label class="requestLabel">15%</label>
+                <input class="requestInputTip" type="radio" name="requestTip" value="15"/>
+            </div>
+
+            <div class="requestDivBlock">
+                <label class="requestLabel">20%</label>
+                <input class="requestInputTip" type="radio" name="requestTip" value="20"/>
+            </div>
+
+            <div class="requestTotal">
+
+                <h2>
+                    <span>Total: $</span><span id="totalValue"></span>
+                </h2>
+                <div class="buttonDiv"><button class="requestButton">Request</button></div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer class=pageFooter>
+    
+        <div class="pageDiv1">           
+        
+            <h3 class=pageHeading3>Site Map</h3>
+            <hr class="pageLine"/>
+        
+            <nav class=pageNav>
+          
+                <ul class=pageUL>
+            
+                    <li><a class="regularLink" href="index.html">Home</a></li>
+                    <li><a class="regularLink" href="register.html">Register</a></li>
+                    <li><a class="regularLink" href="about.html">How it All Works</a></li>
+
+                </ul>
+          
+            </nav>
+      
+        </div>
+    
+        <div class="pageDiv1">
+      
+            <h3 class=pageHeading3>Legal</h3>
+            <hr class="pageLine"/>
+        
+            <nav class=pageNav>
+          
+                <ul class=pageUL>
+
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+
+                </ul>
+          
+            </nav>
+      
+        </div>
+    
+        <div class="pageDiv1">
+      
+            <h3 class=pageHeading3>Food is Life :)</h3>
+            <hr class="pageLine"/>
+      
+        </div>
+    
+    </footer>
+
+    <script src="requestTotal.js"></script>
+    
+</body>
+
+</html>

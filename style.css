@@ -1,0 +1,536 @@
+/*This file is organized in different sections - each one being for a separate page.
+    The first section describes the fonts that are used in this style.css file
+    The second section describes the general style for all pages
+    The third section describes the styling applied to the top of all pages
+    Fourth section describes the style for the home page (index.html)
+    Fifth section describes the style for the about page (about.html)
+    Sixth section describes the style for the register page (register.html)
+    Seventh section describes the style for the request page (request.html)
+    Section eight describes the styling applied to the bottom of all pages*/
+
+
+/*Section 1*/
+@font-face {
+    font-family: 'Aguafina Script'; 
+    src: url(aguafina_script.woff);
+}
+
+@font-face {
+    font-family: 'Droid Serif'; 
+    src: url(droid_serif.woff);
+}
+
+
+/*Section 2*/
+/*This will be the general styling for the page
+  unless specified otherwise.*/
+
+body, html {
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-family: 'Droid Serif', serif;
+	font-size: 15px;
+    font-weight: normal;
+    line-height: 26px;
+    height: 100%;    
+    overflow-x: hidden;
+    /*background-color: white;*/
+}
+
+
+/*Section 3*/
+/*#logo {
+    color: FireBrick;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px 0px 0px 0px;
+  
+}*/
+
+
+.pageHeader {
+    padding: 1px 5px 10px 5px;
+}
+
+
+/*Section 4*/
+/*Styling guidelines for the about.html page*/
+
+.homeBanner {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: -6px;
+    left: -6px;
+    background: white;
+    display: none;
+}
+
+.bannerImage {
+    width: 101%;
+    height: 200px;
+}
+
+.bannerImage:hover {
+    filter: blur(4px);
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 12%;
+    right: 0%;
+    padding: 15px;
+    transform: translate(0%, -30%);
+    font-size: xx-large;
+    font-weight: bolder;
+    border: 3px solid black;
+    background-color: black;
+    width: 1.5%;
+}
+
+.close:hover {
+    background-color: FireBrick;
+}
+
+.bannerCenterDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    text-shadow: 3px 3px 3px black;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.discount {
+    color: purple;
+}
+
+.homeDiv{
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.homeDiv2 {
+    float: right;
+    padding: 28px 90px 5px 5px;
+}
+
+.regularLink2 {
+    text-decoration: none;
+    color: black;
+}
+
+.imageDiv {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.homePic1 {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+}
+
+.imageCenterDiv {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.homeDiv3 {
+    display: flex;
+    padding: 0px 0px 300px 0px;
+}
+
+.homePic2 {
+    width: 85%;
+    padding: 15px 0px 0px 60px;
+}
+
+.homeSection {
+    padding: 35px 80px 35px 200px;
+}
+
+.boldSpan {
+    font-weight: bolder;
+}
+
+.lightSpan {
+    color: #787878;
+}
+
+.homeButton {
+    text-align: center;
+    font-size: 16px;
+    background: black;
+    color: white;
+    width: 13%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.homeButton:hover {
+    background: #ccad52;
+}
+
+.homeDiv4 {
+    text-align: center;
+    padding: 0px 0px 160px 0px;
+}
+
+.homeDiv5 {
+    display: inline-block;
+    width: 28%;
+    padding: 5px 30px;
+    vertical-align: top;    
+}
+
+.couponDiv {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.homePic3 {
+    border-radius: 25px;
+}
+
+.homePic3:hover {
+    filter: blur(4px);
+}
+
+.coupon {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: none;
+}
+
+.restaurantHeading {
+    text-transform: uppercase;
+}
+
+.homeDiv6 {
+    text-align: center;
+    vertical-align: top;
+    padding: 60px 0px 180px 0px;
+    background: url("homePic2.jpg");    /*Retrieved from: http://showcase.revature.com/foodar100/images/bg-aboutus.jpg*/
+    background-attachment: fixed;
+    max-height: 100px;
+}
+
+.homeHeading3 {
+    color: white;
+    font-variant: small-caps;
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+}
+
+.homeP {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.homeInput {
+    width: 15%;
+    height: 40px;
+    border: 2px solid;
+    border-color: #D08C00;
+    padding: 0px 0px 0px 10px;
+    font-size: 15px;
+}
+
+.homeButton2 {
+    width: 3%;
+    height: 44px;
+    background: #f7a700;
+    border: 2px solid;
+    border-color: #D08C00;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.homeButton2:hover {
+    background-color: #5288cc;
+}
+
+.homeP.zipButtonAlert {
+    display: none;
+}
+
+
+/*Section 5*/
+/*Styling guidelines for the about.html page*/
+
+.aboutHeading1 {
+    text-align: center;
+    color: #ccad52;
+    font-family: "Aguafina Script", serif;
+    font-size: 55px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: bold; 
+    line-height: 26.4px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+.aboutLine {
+    border: 2px solid #eaeaea;
+}
+
+.aboutDiv {
+    padding: 0px 0px 300px 0px;
+}
+
+.aboutHeading3 {
+    font-family: sans;
+    text-align: center;
+    padding: 35px 5px 5px;
+    text-transform: uppercase;
+}
+
+.aboutP {
+    text-align: center;
+    padding: 5px 320px 35px;
+}
+
+
+/*Section 6*/
+/*Styling guidelines for the register.html page*/
+
+.registerHeading1 {
+    text-align: center;
+    color: #ccad52;
+    font-family: 'Aguafina Script', serif;
+    font-size: 55px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 900; 
+    line-height: 26.4px;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+}
+
+.registerLine {
+    border: 2px solid #eaeaea;
+}
+
+.registerP {
+    padding: 5px 190px;
+    font-size: 14px,
+}
+
+.registerLegend {
+    font-family: "Droid Serif", serif;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 25px 190px;
+    text-transform: uppercase;
+}
+
+.registerDiv {
+    padding: 20px 200px 20px 200px;
+}
+
+.registerInput {
+    width: 47%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 6px;
+    background: #f3f3f3;
+    padding: 0px 0px 0px 10px;
+    font-size: 15px
+}
+
+.registerInput2 {
+    width: 47%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 6px;
+    background: #f3f3f3;
+    padding: 0px 0px 0px 10px;
+    font-size: 15px;
+    float: right;
+}
+
+.registerButton {
+    text-align: center;
+    font-size: 20px;
+    background: black;
+    color: white;
+    width: 13%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.registerButton:hover {
+    background: #ccad52;
+}
+
+.registerDiv2 {
+    padding: 20px 5px 50px 200px;
+}
+
+
+/*Section 7*/
+/*Styling guidelines for the request.html page*/
+
+.requestHeading1 {
+    text-align: center;
+    color: #ccad52;
+    font-family: 'Aguafina Script', serif;
+    font-size: 55px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 900; 
+    line-height: 26.4px;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+}
+
+.requestLine {
+    border: 2px solid #eaeaea;
+}
+
+.requestDiv {
+    width: 60%;
+    margin: auto;
+    padding: 1em;
+}
+
+.requestHeading4 {
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.requestInput {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    background: #f3f3f3;
+    border: 2px solid #f3f3f3;
+    line-height: 50px;
+    padding-left: 15px;
+}
+
+.requestDivBlock {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+    line-height: 35px;
+}
+
+.requestLabel {
+    display: block;
+    position: relative;
+    top: 10px;
+    font-weight: bolder;
+}
+
+.requestInputStyle, .requestInputTip {
+    position: relative;
+    bottom: 5px;
+}
+
+.requestTotal {
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 18px;
+}
+
+.buttonDiv{
+    padding: 0px 0px 0px 20px;
+}
+
+.requestButton {
+    width: 12%;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.requestButton:hover {
+    background-color: #ccad52;
+}
+
+
+/*Section 8*/
+/*This setting applies to the bottom of all pages*/
+
+.pageFooter {
+    background-color: black;
+    color: white;
+    padding: 0px 0px 100px 0px;
+}
+
+.pageDiv1 {
+    display: inline-block;
+    width: 28%;
+    padding: 5px 30px;
+    vertical-align: top;
+}
+
+.pageHeading3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pageLine {
+    width: 6%;
+    height: 1px;
+    margin: 0;
+    border: 1px solid;
+    background: white;
+}
+
+.pageNav {
+    padding: 15px 0px 0px 0px;
+}
+
+.pageUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+/*This is how links are displayed*/
+.regularLink {
+    text-decoration: none;
+    color: white;
+}
+
+.regularLink:hover {
+    color: #F7A700;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Foodar Home</title>
+
+    <link rel="Foodar Icon" href="title.ico"/>
+  
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  
+</head>
+
+<body>
+
+    <!--script src="file.js"></script>
+    <script>alert("This page is only for display, and not for use!");</script-->
+  
+    <header class="pageHeader">
+
+        <div class="homeBanner" id="banner">
+
+            <!--Retrieved from 
+            https://www.thepartywizard.com.au/wp-content/uploads/2017/02/thepartywizard_banner-optimised.jpg-->                
+            <image class="bannerImage" src="meal-ad2.jpg" alt="Today's Deal"/>
+            <span class="close" id="close">&times;</span>
+
+            <div class="bannerCenterDiv">
+                <a class="discount" id="discount" href="register.html">Get a 10% Discount!</a>
+            </div>
+
+        </div>
+    
+        <div class="homeDiv">
+      
+            <a href="#">
+                <!--Retrieved from 
+                http://showcase.revature.com/foodar100/images/logo.png-->
+                <img src="logo.png" alt="Foodar Logo"/>
+                <!--nav id="logo">Foodar</nav-->
+            </a>
+
+        </div>
+      
+        <div class="homeDiv2">
+      
+            <span><a class="regularLink2" href="#">Sign In</a></span>
+            <span>/</span>
+             <span><a class="regularLink2" href="register.html">Register</a></span>
+            <span>/</span>
+            <span><a class="regularLink2" href="request.html">Request</a></span>
+      
+        </div>
+      
+    </header>
+  
+    <div class=imageDiv>
+
+        <!--Retrieved from
+            http://showcase.revature.com/foodar100/images/03.jpg-->
+        <image class="homePic1" src="homePic.jpg" alt="Meal Picture"/>
+        <div class=imageCenterDiv>Try A New Meal Today</div>
+
+    </div>
+  
+    <h1 class="aboutHeading1">How It Works</h1>
+    <hr class="aboutLine">
+  
+    <br />
+  
+    <div class="homeDiv3">
+        
+        <div class="flexChild">
+            <!--Retrieved from
+                http://showcase.revature.com/foodar100/images/menu.jpg-->
+            <image class="homePic2" src="menuLogo.jpg" alt="Menu Logo"/>
+        </div>
+
+        <div class="flexChild">
+
+            <section class="homeSection">
+
+                <span class="boldSpan">The process is simple.</span>
+                <span class="lightSpan">We deliver whatever food you order from our partner restaurants. 
+                    We provide an experience to our patrons with utmost courtesy and 
+                    hospitality. Try out Foodar today!</span>
+            
+                <ol>
+                    <li>Order your food</li>
+                    <li>Find a driver</li>
+                    <li>Place pickup request</li>
+                </ol>
+
+                <button class="homeButton" onclick="location.href = 'about.html';">Read More</button>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <h1 class="aboutHeading1">Feature Restaurants</h1>
+    <hr class="aboutLine">
+
+    <div class="homeDiv4">
+
+        <div class="homeDiv5">
+
+            <div class="couponDiv">
+                <!--Retrieved from
+                    http://showcase.revature.com/foodar100/images/fish.jpg-->
+                <image class="homePic3" id="image1" src="fish&chips.jpg" alt="Fish & Chips Image"/>
+                <h4 class="coupon">Coupon: <span></span></h4>
+            </div>
+
+            <h3 class=restaurantHeading>Fish & Chips Galore!</h3>
+
+            <p>Since 1968, Fish & Chips Gallore! has served the bay area with its 
+                palatable array of fried fish and sailor's choice dessert.</p>
+            <p>Order today and recieve 15% your total meal and we'll throw in our 
+                famous hush puppies as a thank you.</p>
+
+        </div>
+
+        <div class="homeDiv5">
+
+            <div class="couponDiv">
+                <!--Retrieved from
+                    http://showcase.revature.com/foodar100/images/burger.jpg-->
+                <image class="homePic3" id="image2" src="burger.jpg" alt="Hamburger Image"/>
+                <h4 class="coupon">Coupon: <span></span></h4>
+            </div>
+
+            <h3 class=restaurantHeading>Bubba Joe's</h3>
+
+            <p>When you actually, really desire a burger, you order from Bubba Joe's. 
+                Unlike the fast food business, we eat our own food and love it.</p>
+            <p>Order 2 burgers and get a small fry on us today.</p>
+
+        </div>
+
+        <div class="homeDiv5">
+
+            <div class="couponDiv">
+                <!--Retrieved from 
+                    http://showcase.revature.com/foodar100/images/dessert.jpg-->
+                <image class="homePic3" id="image3" src="dessert.jpg" alt="Dessert Image"/>
+                <h4 class="coupon">Coupon: <span></span></h4>
+            </div>
+
+            <h3 class=restaurantHeading>Awww Yeah Desserts</h3>
+
+            <p>Welcome to your favorite part of dinner, lunch, breakfast, brunch, 
+                any meal. We know you don't need encouragement from us to eat our 
+                desserts. Look at the picture. You know you want it.</p>
+            <p>Just for you, we'll knock off 10% to make your wallet feel good too.</p>
+
+        </div>
+
+    </div>
+
+    <div class="homeDiv6">
+
+        <h3 class=homeHeading3>Find The Nearest City</h3>
+        <p class="homeP">Fill out the form below with your zip code of where you live.</p>
+
+        <form>
+            
+            <span>
+                <input class="homeInput" id="zipInput" type="text" id="zip" name="zip" 
+                    inputmode="numeric" maxlength=5 placeholder="ZipCode"/>
+            </span>
+            <span>
+                <button class="homeButton2" id="zipButton" type=button onclick="zipChecker()">Go</button>
+            </span>
+            <p class="homeP zipButtonAlert" id="zipButtonAlert">Press Go</p>
+
+        </form>
+
+    </div>
+    
+    <footer class=pageFooter>
+    
+        <div class="pageDiv1">           
+        
+            <h3 class=pageHeading3>Site Map</h3>
+            <hr class="pageLine"/>
+        
+            <nav class=pageNav>
+          
+                <ul class=pageUL>
+            
+                    <li><a class="regularLink" href="#">Home</a></li>
+                    <li><a class="regularLink" href="register.html">Register</a></li>
+                    <li><a class="regularLink" href="about.html">How it All Works</a></li>
+
+                </ul>
+          
+            </nav>
+      
+        </div>
+    
+        <div class="pageDiv1">
+      
+            <h3 class=pageHeading3>Legal</h3>
+            <hr class="pageLine"/>
+        
+            <nav class=pageNav>
+          
+                <ul class=pageUL>
+
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+
+                </ul>
+          
+            </nav>
+      
+        </div>
+    
+        <div class="pageDiv1">
+      
+            <h3 class=pageHeading3>Food is Life :)</h3>
+            <hr class="pageLine"/>
+      
+        </div>
+    
+    </footer>
+
+    <script src="banner.js"></script>
+    <script src="showCoupon.js"></script>
+    <script src="checkZip.js"></script>
+    
+</body>
+
+</html>  
